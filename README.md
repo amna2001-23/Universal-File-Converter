@@ -22,3 +22,6 @@ Welcome to the Universal File Converter App repository! This application is buil
 To run this Streamlit app locally, follow these steps:
 
 1. Clone this repository:
+2. git add requirements.txt
+git commit -m "Fix requirements.txt with correct package names"
+git push origin main
