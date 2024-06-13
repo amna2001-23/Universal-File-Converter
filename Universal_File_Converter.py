@@ -3,8 +3,6 @@ from PyPDF2 import PdfReader
 from docx import Document
 from docx2pdf import convert
 import io
-import os
-import pythoncom
 
 # Conversion functions
 def convert_pdf_to_word(pdf_file):
@@ -20,7 +18,6 @@ def convert_pdf_to_word(pdf_file):
     return output.getvalue()
 
 def convert_word_to_pdf(word_file):
-    pythoncom.CoInitialize()  # Initialize the COM library
     temp_docx_path = 'temp.docx'
     with open(temp_docx_path, 'wb') as f:
         f.write(word_file.read())
@@ -29,16 +26,15 @@ def convert_word_to_pdf(word_file):
         convert(temp_docx_path, "converted.pdf")
         with open("converted.pdf", "rb") as f:
             pdf_data = f.read()
-        os.remove(temp_docx_path)
-        os.remove("converted.pdf")
         return pdf_data
     except Exception as e:
         st.error(f"Error converting Word to PDF: {e}")
+        return None
+    finally:
         if os.path.exists(temp_docx_path):
             os.remove(temp_docx_path)
         if os.path.exists("converted.pdf"):
             os.remove("converted.pdf")
-        return None
 
 # Streamlit app
 st.sidebar.title('Navigation')
