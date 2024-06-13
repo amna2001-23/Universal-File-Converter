@@ -6,6 +6,7 @@ import io
 import os
 import pythoncom
 
+
 # Conversion functions
 def convert_pdf_to_word(pdf_file):
     reader = PdfReader(pdf_file)
