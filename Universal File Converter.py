@@ -49,10 +49,10 @@ if page == 'Introduction':
     # Image slider
     with st.expander("Preview Images"):
         image_list = [
-            'img/p2w.jpg',
-            'img/p2w1.jpg',
-            'img/w2p.png',
-            'img/p2w2.jpg'
+            'p2w.jpg',
+            'p2w1.jpg',
+            'w2p.png',
+            'p2w2.jpg'
         ]
         image_index = st.slider('Slider', 0, len(image_list) - 1)
         st.image(image_list[image_index])
