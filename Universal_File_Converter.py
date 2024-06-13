@@ -54,8 +54,36 @@ if page == 'Introduction':
         st.image(image_list[image_index])
     st.subheader("Introducing Universal File Converter: The Ultimate File Converter")
     st.write("""
-    This application allows you to convert files between various formats, specifically PDF to Word and Word to PDF. 
-    Simply upload your file, select the desired conversion, and download the converted file.
+    This application allows you to convert files between Word and PDF formats. 
+    You can convert:
+    - PDFs to Word.
+    - Word documents to PDFs.
+    
+    **Effortless Conversion**
+
+    Universal File Converter is a versatile file converter that empowers users to effortlessly convert files between Word and PDF formats. With just a few clicks, you can transform your documents into the format that best suits your needs.
+
+    **Convert PDFs to Word**
+
+    This functionality is invaluable for users who need to extract text or data from PDF files or make edits to existing documents. Whether you're converting a PDF report into a Word document for further editing, Universal File Converter makes the process quick and hassle-free.
+
+    **Create PDFs from Word Documents**
+
+    This feature is ideal for users who need to share files in a secure and universally accessible format. Whether you're compiling a series of documents into a single PDF or converting an image into a professional-looking PDF, Universal File Converter ensures that your files are presented in the best possible way.
+
+    **User-Friendly Interface**
+
+    Universal File Converter boasts a user-friendly interface that makes file conversion a breeze. The intuitive design allows users of all experience levels to navigate the software effortlessly and complete conversions quickly. Whether you're a seasoned professional or a novice user, you'll find Universal File Converter to be a valuable tool for all your file conversion needs.
+
+    **Secure and Reliable**
+
+    Security is paramount when it comes to file conversion, and Universal File Converter takes this aspect seriously. The application ensures that your files are handled securely throughout the conversion process, giving you peace of mind knowing that your sensitive information is protected. Additionally, Universal File Converter delivers reliable performance, ensuring that your files are accurately converted every time.
+
+    **Conclusion**
+
+    In conclusion, Universal File Converter is the ultimate file converter for users who demand efficiency, versatility, and reliability. Whether you're converting PDFs to Word or creating PDFs from Word documents, Universal File Converter has you covered. With its user-friendly interface, secure handling of files, and seamless conversion capabilities, Universal File Converter is the go-to solution for all your file conversion needs.
+
+    Ready to experience the power of Universal File Converter? Try it today and take your file conversion game to the next level!
     """)
     
 elif page == 'Converter':
