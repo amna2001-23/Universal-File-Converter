@@ -1,5 +1,7 @@
-Python
-Streamlit
+streamlit
 PyPDF2
- python-docx
+docx
 docx2pdf
+altair
+pandas
+numpy
