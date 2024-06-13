@@ -1,0 +1,5 @@
+- Python
+- Streamlit
+- PyPDF2
+- python-docx
+- docx2pdf
